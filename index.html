@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Detective's Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Are you ready,Sherlock!!</h1>
+        <ul>
+            <li id="myrecords">My Records</li> |  <li id ="instructions">instructions</li>
+        </ul>
+    </nav>
+
+<div class="container">
+    <h1>Unleash your inner detective !!guess the number </h1>
+    <input type="number" id="usrnumber" placeholder="Enter your number"><br>
+    
+    <button onclick="run()" id="enter">GO!</button>
+</div>
+
+<div class="resultzone">
+    <h2 id="result">LETS SEE</h2>
+</div>
+
+<div class="overlay"></div>
+
+<div class="overlaypop">
+    <h2 >INSTRUCTIONS</h2>
+    <ul>
+        <li>You will see an input field to enter your guess and a button labeled "Go."</li>
+        <li>In the input field, enter a number between 1 and 100.</li>
+        <li>Click the "Go" button to submit your guess.</li>  
+        <li>The game will compare your guess to the secret number.</li>
+        <li>Based on your guess, the game will provide one of the following responses:
+
+            - "Too high" if your guess is higher than the secret number.<br>
+            - "Too low" if your guess is lower than the secret number.<br>
+            -  "Correct" if your guess matches the secret number.
+            </li>
+        <li>Use the feedback to adjust your next guess.
+            Enter another number and click "Go" again.</li>
+
+    </ul>
+    <button onclick="end()" id="instclose">CLOSE</button>
+</div>
+<div class="recordpop">
+    <h2>My pevious Records</h2>
+    <ul id="record1">
+        
+    </ul>
+    <button id="end" onclick="end1()">CLOSE</button>
+</div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
